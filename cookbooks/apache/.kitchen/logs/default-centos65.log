@@ -1881,3 +1881,47 @@ I, [2015-03-31T12:05:10.204217 #20066]  INFO -- default-centos65: Fetching: rspe
 I, [2015-03-31T12:05:31.621721 #20066]  INFO -- default-centos65: Fetching: rspec-its-1.2.0.gemFetching: rspec-its-1.2.0.gem ( 57%)Fetching: rspec-its-1.2.0.gem ( 64%)Fetching: rspec-its-1.2.0.gem (100%)Fetching: rspec-its-1.2.0.gem (100%)
 I, [2015-03-31T12:05:53.446573 #20066]  INFO -- default-centos65: Fetching: rspec-mocks-3.2.1.gemFetching: rspec-mocks-3.2.1.gem ( 11%)Fetching: rspec-mocks-3.2.1.gem ( 12%)Fetching: rspec-mocks-3.2.1.gem ( 22%)Fetching: rspec-mocks-3.2.1.gem ( 24%)Fetching: rspec-mocks-3.2.1.gem ( 33%)Fetching: rspec-mocks-3.2.1.gem ( 35%)Fetching: rspec-mocks-3.2.1.gem ( 44%)Fetching: rspec-mocks-3.2.1.gem ( 47%)Fetching: rspec-mocks-3.2.1.gem ( 56%)Fetching: rspec-mocks-3.2.1.gem ( 58%)Fetching: rspec-mocks-3.2.1.gem ( 67%)Fetching: rspec-mocks-3.2.1.gem ( 70%)Fetching: rspec-mocks-3.2.1.gem ( 78%)Fetching: rspec-mocks-3.2.1.gem ( 81%)Fetching: rspec-mocks-3.2.1.gem ( 89%)Fetching: rspec-mocks-3.2.1.gem ( 93%)Fetching: rspec-mocks-3.2.1.gem (100%)Fetching: rspec-mocks-3.2.1.gem (100%)
 I, [2015-03-31T12:06:15.425889 #20066]  INFO -- default-centos65: Fetching: rspec-3.2.0.gemFetching: rspec-3.2.0.gem (100%)Fetching: rspec-3.2.0.gem (100%)
+I, [2015-03-31T12:06:26.096067 #20066]  INFO -- default-centos65: Fetching: serverspec-2.14.0.gemFetching: serverspec-2.14.0.gem ( 22%)Fetching: serverspec-2.14.0.gem ( 25%)Fetching: serverspec-2.14.0.gem ( 46%)Fetching: serverspec-2.14.0.gem ( 50%)Fetching: serverspec-2.14.0.gem ( 70%)Fetching: serverspec-2.14.0.gem ( 74%)Fetching: serverspec-2.14.0.gem ( 95%)Fetching: serverspec-2.14.0.gem ( 99%)Fetching: serverspec-2.14.0.gem (100%)Fetching: serverspec-2.14.0.gem (100%)
+I, [2015-03-31T12:06:26.137650 #20066]  INFO -- default-centos65: -----> serverspec installed (version 2.14.0)
+I, [2015-03-31T12:06:26.205495 #20066]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T12:06:26.502037 #20066]  INFO -- default-centos65: 
+I, [2015-03-31T12:06:26.502088 #20066]  INFO -- default-centos65: bears site
+I, [2015-03-31T12:06:26.554665 #20066]  INFO -- default-centos65: [32m  responds on port 81[0m
+I, [2015-03-31T12:06:26.554718 #20066]  INFO -- default-centos65: 
+I, [2015-03-31T12:06:26.554734 #20066]  INFO -- default-centos65: clowns site
+I, [2015-03-31T12:06:26.565208 #20066]  INFO -- default-centos65: [32m  responds on port 80[0m
+I, [2015-03-31T12:06:26.565259 #20066]  INFO -- default-centos65: 
+I, [2015-03-31T12:06:26.565284 #20066]  INFO -- default-centos65: server
+I, [2015-03-31T12:06:26.583156 #20066]  INFO -- default-centos65: [32m  has apache installed[0m
+I, [2015-03-31T12:06:26.583302 #20066]  INFO -- default-centos65: 
+I, [2015-03-31T12:06:26.583324 #20066]  INFO -- default-centos65: Finished in 0.08268 seconds (files took 0.26081 seconds to load)
+I, [2015-03-31T12:06:26.583340 #20066]  INFO -- default-centos65: [32m3 examples, 0 failures[0m
+I, [2015-03-31T12:06:26.583352 #20066]  INFO -- default-centos65: 
+I, [2015-03-31T12:06:26.619354 #20066]  INFO -- default-centos65: Finished verifying <default-centos65> (2m27.58s).
+I, [2015-03-31T12:07:06.077069 #20474]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-03-31T12:07:06.077725 #20474]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-03-31T12:07:06.077786 #20474]  INFO -- default-centos65: Preparing dna.json
+I, [2015-03-31T12:07:06.078316 #20474]  INFO -- default-centos65: Preparing current project directory as a cookbook
+I, [2015-03-31T12:07:06.085862 #20474]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-03-31T12:07:06.087451 #20474]  INFO -- default-centos65: Preparing solo.rb
+I, [2015-03-31T12:07:06.120802 #20474]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-03-31T12:07:06.135514 #20474]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-03-31T12:07:06.797529 #20474]  INFO -- default-centos65: Starting Chef Client, version 12.2.1
+I, [2015-03-31T12:07:12.933490 #20474]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-03-31T12:07:12.935062 #20474]  INFO -- default-centos65: Converging 9 resources
+I, [2015-03-31T12:07:12.936202 #20474]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-03-31T12:07:14.588267 #20474]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T12:07:14.588332 #20474]  INFO -- default-centos65:   * execute[mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf.disabled] action run (skipped due to only_if)
+I, [2015-03-31T12:07:14.592689 #20474]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T12:07:14.594010 #20474]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T12:07:14.596097 #20474]  INFO -- default-centos65:   * template[/srv/apache/clowns/index.html] action create (up to date)
+I, [2015-03-31T12:07:14.601784 #20474]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T12:07:14.601840 #20474]  INFO -- default-centos65:   * directory[/srv/apache/bears] action create (up to date)
+I, [2015-03-31T12:07:14.601861 #20474]  INFO -- default-centos65:   * template[/srv/apache/bears/index.html] action create (up to date)
+I, [2015-03-31T12:07:14.652058 #20474]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T12:07:14.703140 #20474]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T12:07:14.703192 #20474]  INFO -- default-centos65: 
+I, [2015-03-31T12:07:14.703208 #20474]  INFO -- default-centos65: Running handlers:
+I, [2015-03-31T12:07:14.703241 #20474]  INFO -- default-centos65: Running handlers complete
+I, [2015-03-31T12:07:14.703254 #20474]  INFO -- default-centos65: Chef Client finished, 0/9 resources updated in 7.920319448 seconds
+I, [2015-03-31T12:07:14.848906 #20474]  INFO -- default-centos65: Finished converging <default-centos65> (0m8.77s).

@@ -113,3 +113,7 @@ I, [2015-03-31T12:03:33.904016 #20016]  INFO -- Kitchen: -----> Setting up <defa
 I, [2015-03-31T12:03:48.463159 #20016]  INFO -- Kitchen: -----> Kitchen is finished. (0m14.83s)
 I, [2015-03-31T12:03:58.808610 #20066]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-03-31T12:03:59.041312 #20066]  INFO -- Kitchen: -----> Verifying <default-centos65>...
+I, [2015-03-31T12:06:26.619467 #20066]  INFO -- Kitchen: -----> Kitchen is finished. (2m27.81s)
+I, [2015-03-31T12:07:05.847444 #20474]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-31T12:07:06.077013 #20474]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-31T12:07:14.849069 #20474]  INFO -- Kitchen: -----> Kitchen is finished. (0m9.00s)
