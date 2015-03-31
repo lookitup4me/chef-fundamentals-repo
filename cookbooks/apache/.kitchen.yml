@@ -9,6 +9,9 @@ platforms:
   - name: centos65
     driver_config:
       box: /Users/jvarghese/tdd/centos65.box
+      ￼ network:
+          - ["forwarded_port", {guest: 80, host: 8880}]
+          - ["forwarded_port", {guest: 81, host: 8881}]
 
 suites:
   - name: default

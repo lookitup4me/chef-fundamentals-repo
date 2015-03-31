@@ -634,3 +634,169 @@ I, [2015-03-31T10:14:28.132036 #15568]  INFO -- default-centos65: Running handle
 I, [2015-03-31T10:14:28.132053 #15568]  INFO -- default-centos65: Running handlers complete
 I, [2015-03-31T10:14:28.132069 #15568]  INFO -- default-centos65: Chef Client finished, 6/10 resources updated in 9.357699738 seconds
 I, [2015-03-31T10:14:28.279851 #15568]  INFO -- default-centos65: Finished converging <default-centos65> (0m10.20s).
+I, [2015-03-31T10:26:28.681840 #15990]  INFO -- default-centos65: -----> Destroying <default-centos65>...
+I, [2015-03-31T10:26:30.771371 #15990]  INFO -- default-centos65: ==> default: Forcing shutdown of VM...
+I, [2015-03-31T10:26:32.115063 #15990]  INFO -- default-centos65: ==> default: Destroying VM and associated drives...
+I, [2015-03-31T10:26:32.381003 #15990]  INFO -- default-centos65: Vagrant instance <default-centos65> destroyed.
+I, [2015-03-31T10:26:32.382915 #15990]  INFO -- default-centos65: Finished destroying <default-centos65> (0m3.70s).
+I, [2015-03-31T10:26:46.252956 #16068]  INFO -- default-centos65: -----> Creating <default-centos65>...
+I, [2015-03-31T10:26:47.231448 #16068]  INFO -- default-centos65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-31T10:26:47.392983 #16068]  INFO -- default-centos65: ==> default: Importing base box '/Users/jvarghese/tdd/centos65.box'...
+I, [2015-03-31T10:26:52.856653 #16068]  INFO -- default-centos65: [KProgress: 20%[KProgress: 50%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-03-31T10:26:53.410822 #16068]  INFO -- default-centos65: ==> default: Setting the name of the VM: kitchen-apache-default-centos65_default_1427822813374_33202
+I, [2015-03-31T10:26:53.664769 #16068]  INFO -- default-centos65: ==> default: Clearing any previously set network interfaces...
+I, [2015-03-31T10:26:53.707018 #16068]  INFO -- default-centos65: ==> default: Preparing network interfaces based on configuration...
+I, [2015-03-31T10:26:53.707282 #16068]  INFO -- default-centos65:     default: Adapter 1: nat
+I, [2015-03-31T10:26:53.748691 #16068]  INFO -- default-centos65: ==> default: Forwarding ports...
+I, [2015-03-31T10:26:53.810459 #16068]  INFO -- default-centos65:     default: 22 => 2222 (adapter 1)
+I, [2015-03-31T10:26:53.934788 #16068]  INFO -- default-centos65: ==> default: Booting VM...
+I, [2015-03-31T10:26:54.165515 #16068]  INFO -- default-centos65: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-03-31T10:26:54.456563 #16068]  INFO -- default-centos65:     default: SSH address: 127.0.0.1:2222
+I, [2015-03-31T10:26:54.456705 #16068]  INFO -- default-centos65:     default: SSH username: vagrant
+I, [2015-03-31T10:26:54.456859 #16068]  INFO -- default-centos65:     default: SSH auth method: private key
+I, [2015-03-31T10:27:09.611953 #16068]  INFO -- default-centos65:     default: Warning: Connection timeout. Retrying...
+I, [2015-03-31T10:27:09.939934 #16068]  INFO -- default-centos65:     default: 
+I, [2015-03-31T10:27:09.939998 #16068]  INFO -- default-centos65:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-03-31T10:27:09.940022 #16068]  INFO -- default-centos65:     default: this with a newly generated keypair for better security.
+I, [2015-03-31T10:27:10.558489 #16068]  INFO -- default-centos65:     default: 
+I, [2015-03-31T10:27:10.558547 #16068]  INFO -- default-centos65:     default: Inserting generated public key within guest...
+I, [2015-03-31T10:27:10.688747 #16068]  INFO -- default-centos65:     default: Removing insecure key from the guest if its present...
+I, [2015-03-31T10:27:10.773501 #16068]  INFO -- default-centos65:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-03-31T10:27:11.200675 #16068]  INFO -- default-centos65: ==> default: Machine booted and ready!
+I, [2015-03-31T10:27:11.201218 #16068]  INFO -- default-centos65: ==> default: Checking for guest additions in VM...
+I, [2015-03-31T10:27:11.241243 #16068]  INFO -- default-centos65: ==> default: Setting hostname...
+I, [2015-03-31T10:27:15.407710 #16068]  INFO -- default-centos65: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-03-31T10:27:16.794487 #16068]  INFO -- default-centos65: Vagrant instance <default-centos65> created.
+I, [2015-03-31T10:27:16.796422 #16068]  INFO -- default-centos65: Finished creating <default-centos65> (0m30.54s).
+I, [2015-03-31T10:27:16.796539 #16068]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-03-31T10:27:16.797401 #16068]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-03-31T10:27:16.797503 #16068]  INFO -- default-centos65: Preparing dna.json
+I, [2015-03-31T10:27:16.798262 #16068]  INFO -- default-centos65: Preparing current project directory as a cookbook
+I, [2015-03-31T10:27:16.803958 #16068]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-03-31T10:27:16.805424 #16068]  INFO -- default-centos65: Preparing solo.rb
+I, [2015-03-31T10:27:16.846385 #16068]  INFO -- default-centos65: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-03-31T10:27:16.846445 #16068]  INFO -- default-centos65: downloading https://www.chef.io/chef/install.sh
+I, [2015-03-31T10:27:16.846462 #16068]  INFO -- default-centos65:   to file /tmp/install.sh
+I, [2015-03-31T10:27:16.846474 #16068]  INFO -- default-centos65: trying curl...
+I, [2015-03-31T10:27:22.733398 #16068]  INFO -- default-centos65:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+I, [2015-03-31T10:27:22.733537 #16068]  INFO -- default-centos65:                           Dload  Upload   Total   Spent    Left  Speed
+I, [2015-03-31T10:27:23.130731 #16068]  INFO -- default-centos65: 100 18358  100 18358    0     0   2922      0  0:00:06  0:00:06 --:--:-- 46358
+I, [2015-03-31T10:27:23.148938 #16068]  INFO -- default-centos65: Downloading Chef  for el...
+I, [2015-03-31T10:27:23.149014 #16068]  INFO -- default-centos65: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2015-03-31T10:27:23.149031 #16068]  INFO -- default-centos65:   to file /tmp/install.sh.2260/metadata.txt
+I, [2015-03-31T10:27:23.149043 #16068]  INFO -- default-centos65: trying curl...
+I, [2015-03-31T10:27:28.949799 #16068]  INFO -- default-centos65: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.2.1-1.el6.x86_64.rpm
+I, [2015-03-31T10:27:28.949858 #16068]  INFO -- default-centos65: md5	750c9509b04f3b8bb997bab2bb1831ee
+I, [2015-03-31T10:27:28.949923 #16068]  INFO -- default-centos65: sha256	e428180890b381382caa71f726e5790bbc1b86551050ae214bb1a9812373f2a3
+I, [2015-03-31T10:27:28.954224 #16068]  INFO -- default-centos65: downloaded metadata file looks valid...
+I, [2015-03-31T10:27:28.962938 #16068]  INFO -- default-centos65: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.2.1-1.el6.x86_64.rpm
+I, [2015-03-31T10:27:28.962983 #16068]  INFO -- default-centos65:   to file /tmp/install.sh.2260/chef-12.2.1-1.el6.x86_64.rpm
+I, [2015-03-31T10:27:28.962999 #16068]  INFO -- default-centos65: trying curl...
+I, [2015-03-31T10:31:38.246839 #16068]  INFO -- default-centos65: Comparing checksum with sha256sum...
+I, [2015-03-31T10:31:38.435477 #16068]  INFO -- default-centos65: Installing Chef 
+I, [2015-03-31T10:31:38.435528 #16068]  INFO -- default-centos65: installing with rpm...
+I, [2015-03-31T10:31:38.466978 #16068]  INFO -- default-centos65: warning: /tmp/install.sh.2260/chef-12.2.1-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-03-31T10:31:38.648497 #16068]  INFO -- default-centos65: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2015-03-31T10:31:40.663965 #16068]  INFO -- default-centos65:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2015-03-31T10:31:41.296114 #16068]  INFO -- default-centos65: Thank you for installing Chef!
+I, [2015-03-31T10:31:41.325905 #16068]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-03-31T10:31:42.017831 #16068]  INFO -- default-centos65: Starting Chef Client, version 12.2.1
+I, [2015-03-31T10:31:48.171007 #16068]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-03-31T10:31:48.180997 #16068]  INFO -- default-centos65: Converging 9 resources
+I, [2015-03-31T10:31:48.181062 #16068]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-03-31T10:32:54.387286 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.387525 #16068]  INFO -- default-centos65:     - install version 2.2.15-39.el6.centos of package httpd
+I, [2015-03-31T10:32:54.407594 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.407659 #16068]  INFO -- default-centos65:     - execute mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf.disabled
+I, [2015-03-31T10:32:54.414713 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.416845 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.416875 #16068]  INFO -- default-centos65:     - update content in file /etc/httpd/conf.d/clowns.conf from none to 91d554
+I, [2015-03-31T10:32:54.416892 #16068]  INFO -- default-centos65:     --- /etc/httpd/conf.d/clowns.conf	2015-03-31 17:32:53.977379519 +0000
+I, [2015-03-31T10:32:54.416905 #16068]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150331-2357-1sv3t70	2015-03-31 17:32:53.977379519 +0000
+I, [2015-03-31T10:32:54.416921 #16068]  INFO -- default-centos65:     @@ -1 +1,17 @@
+I, [2015-03-31T10:32:54.416949 #16068]  INFO -- default-centos65:     +
+I, [2015-03-31T10:32:54.416968 #16068]  INFO -- default-centos65:     +<VirtualHost *:80>
+I, [2015-03-31T10:32:54.416980 #16068]  INFO -- default-centos65:     +  ServerAdmin webmaster@localhost
+I, [2015-03-31T10:32:54.417027 #16068]  INFO -- default-centos65:     +
+I, [2015-03-31T10:32:54.417038 #16068]  INFO -- default-centos65:     +  DocumentRoot /srv/apache/clowns
+I, [2015-03-31T10:32:54.417049 #16068]  INFO -- default-centos65:     +  <Directory />
+I, [2015-03-31T10:32:54.417074 #16068]  INFO -- default-centos65:     +    Options FollowSymLinks
+I, [2015-03-31T10:32:54.417085 #16068]  INFO -- default-centos65:     +    AllowOverride None
+I, [2015-03-31T10:32:54.417096 #16068]  INFO -- default-centos65:     +  </Directory>
+I, [2015-03-31T10:32:54.417106 #16068]  INFO -- default-centos65:     +  <Directory /srv/apache/clowns>
+I, [2015-03-31T10:32:54.417164 #16068]  INFO -- default-centos65:     +    Options Indexes FollowSymLinks MultiViews
+I, [2015-03-31T10:32:54.417177 #16068]  INFO -- default-centos65:     +    AllowOverride None
+I, [2015-03-31T10:32:54.417187 #16068]  INFO -- default-centos65:     +    Order allow,deny
+I, [2015-03-31T10:32:54.417198 #16068]  INFO -- default-centos65:     +    allow from all
+I, [2015-03-31T10:32:54.417208 #16068]  INFO -- default-centos65:     +  </Directory>
+I, [2015-03-31T10:32:54.417218 #16068]  INFO -- default-centos65:     +</VirtualHost>
+I, [2015-03-31T10:32:54.443245 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.446457 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.446492 #16068]  INFO -- default-centos65:     - create new directory /srv/apache/clowns
+I, [2015-03-31T10:32:54.446525 #16068]  INFO -- default-centos65:     - change mode from '' to '0755'
+I, [2015-03-31T10:32:54.449246 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.450350 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.450388 #16068]  INFO -- default-centos65:     - update content in file /srv/apache/clowns/index.html from none to 7cf186
+I, [2015-03-31T10:32:54.450407 #16068]  INFO -- default-centos65:     --- /srv/apache/clowns/index.html	2015-03-31 17:32:54.010396019 +0000
+I, [2015-03-31T10:32:54.450421 #16068]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150331-2357-1ep6j8h	2015-03-31 17:32:54.010396019 +0000
+I, [2015-03-31T10:32:54.450433 #16068]  INFO -- default-centos65:     @@ -1 +1,8 @@
+I, [2015-03-31T10:32:54.450444 #16068]  INFO -- default-centos65:     +<html>
+I, [2015-03-31T10:32:54.450455 #16068]  INFO -- default-centos65:     +  <body>
+I, [2015-03-31T10:32:54.450466 #16068]  INFO -- default-centos65:     +    <h1>Welcome to Chef</h1>
+I, [2015-03-31T10:32:54.450477 #16068]  INFO -- default-centos65:     +    <h2>We love clowns</h2>
+I, [2015-03-31T10:32:54.450488 #16068]  INFO -- default-centos65:     +    10.0.2.15:80
+I, [2015-03-31T10:32:54.450501 #16068]  INFO -- default-centos65:     +  </body>
+I, [2015-03-31T10:32:54.451063 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.451092 #16068]  INFO -- default-centos65:     - change mode from '' to '0644'
+I, [2015-03-31T10:32:54.453770 #16068]  INFO -- default-centos65:   * template[/etc/httpd/conf.d/bears.conf] action create
+I, [2015-03-31T10:32:54.453985 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.454013 #16068]  INFO -- default-centos65:     - update content in file /etc/httpd/conf.d/bears.conf from none to 67a4ee
+I, [2015-03-31T10:32:54.454029 #16068]  INFO -- default-centos65:     --- /etc/httpd/conf.d/bears.conf	2015-03-31 17:32:54.016399018 +0000
+I, [2015-03-31T10:32:54.454042 #16068]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150331-2357-obncvg	2015-03-31 17:32:54.016399018 +0000
+I, [2015-03-31T10:32:54.454054 #16068]  INFO -- default-centos65:     @@ -1 +1,18 @@
+I, [2015-03-31T10:32:54.454065 #16068]  INFO -- default-centos65:     +  Listen 81
+I, [2015-03-31T10:32:54.454075 #16068]  INFO -- default-centos65:     +
+I, [2015-03-31T10:32:54.454120 #16068]  INFO -- default-centos65:     +<VirtualHost *:81>
+I, [2015-03-31T10:32:54.454132 #16068]  INFO -- default-centos65:     +  ServerAdmin webmaster@localhost
+I, [2015-03-31T10:32:54.454143 #16068]  INFO -- default-centos65:     +
+I, [2015-03-31T10:32:54.454154 #16068]  INFO -- default-centos65:     +  DocumentRoot /srv/apache/bears
+I, [2015-03-31T10:32:54.454164 #16068]  INFO -- default-centos65:     +  <Directory />
+I, [2015-03-31T10:32:54.454175 #16068]  INFO -- default-centos65:     +    Options FollowSymLinks
+I, [2015-03-31T10:32:54.454186 #16068]  INFO -- default-centos65:     +    AllowOverride None
+I, [2015-03-31T10:32:54.454197 #16068]  INFO -- default-centos65:     +  </Directory>
+I, [2015-03-31T10:32:54.454208 #16068]  INFO -- default-centos65:     +  <Directory /srv/apache/bears>
+I, [2015-03-31T10:32:54.454219 #16068]  INFO -- default-centos65:     +    Options Indexes FollowSymLinks MultiViews
+I, [2015-03-31T10:32:54.454229 #16068]  INFO -- default-centos65:     +    AllowOverride None
+I, [2015-03-31T10:32:54.454240 #16068]  INFO -- default-centos65:     +    Order allow,deny
+I, [2015-03-31T10:32:54.454251 #16068]  INFO -- default-centos65:     +    allow from all
+I, [2015-03-31T10:32:54.454261 #16068]  INFO -- default-centos65:     +  </Directory>
+I, [2015-03-31T10:32:54.537266 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.537342 #16068]  INFO -- default-centos65:     - change mode from '' to '0644'
+I, [2015-03-31T10:32:54.537709 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.537783 #16068]  INFO -- default-centos65:     - create new directory /srv/apache/bears
+I, [2015-03-31T10:32:54.537800 #16068]  INFO -- default-centos65:     - change mode from '' to '0755'
+I, [2015-03-31T10:32:54.569477 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.569526 #16068]  INFO -- default-centos65:     - create new file /srv/apache/bears/index.html
+I, [2015-03-31T10:32:54.569541 #16068]  INFO -- default-centos65:     - update content in file /srv/apache/bears/index.html from none to 26dd06
+I, [2015-03-31T10:32:54.569554 #16068]  INFO -- default-centos65:     --- /srv/apache/bears/index.html	2015-03-31 17:32:54.021401518 +0000
+I, [2015-03-31T10:32:54.569566 #16068]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150331-2357-3d7sk9	2015-03-31 17:32:54.020401018 +0000
+I, [2015-03-31T10:32:54.569578 #16068]  INFO -- default-centos65:     @@ -1 +1,8 @@
+I, [2015-03-31T10:32:54.569589 #16068]  INFO -- default-centos65:     +<html>
+I, [2015-03-31T10:32:54.569599 #16068]  INFO -- default-centos65:     +  <body>
+I, [2015-03-31T10:32:54.569610 #16068]  INFO -- default-centos65:     +    <h1>Welcome to Chef</h1>
+I, [2015-03-31T10:32:54.569621 #16068]  INFO -- default-centos65:     +    <h2>We love bears</h2>
+I, [2015-03-31T10:32:54.569631 #16068]  INFO -- default-centos65:     +    10.0.2.15:81
+I, [2015-03-31T10:32:54.569641 #16068]  INFO -- default-centos65:     +  </body>
+I, [2015-03-31T10:32:54.569859 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:54.569880 #16068]  INFO -- default-centos65:     - change mode from '' to '0644'
+I, [2015-03-31T10:32:54.570031 #16068]  INFO -- default-centos65:   * service[httpd] action enable
+I, [2015-03-31T10:32:54.570061 #16068]  INFO -- default-centos65:     - enable service service[httpd]
+I, [2015-03-31T10:32:54.651730 #16068]  INFO -- default-centos65:   * service[httpd] action start
+I, [2015-03-31T10:32:54.651796 #16068]  INFO -- default-centos65:     - start service service[httpd]
+I, [2015-03-31T10:32:55.902084 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:55.902184 #16068]  INFO -- default-centos65:     - restart service service[httpd]
+I, [2015-03-31T10:32:55.902204 #16068]  INFO -- default-centos65: 
+I, [2015-03-31T10:32:55.902220 #16068]  INFO -- default-centos65: Running handlers:
+I, [2015-03-31T10:32:55.902235 #16068]  INFO -- default-centos65: Running handlers complete
+I, [2015-03-31T10:32:55.902249 #16068]  INFO -- default-centos65: Chef Client finished, 11/11 resources updated in 73.924171136 seconds
+I, [2015-03-31T10:32:56.050666 #16068]  INFO -- default-centos65: Finished converging <default-centos65> (5m39.25s).
