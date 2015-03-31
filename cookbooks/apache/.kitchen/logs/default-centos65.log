@@ -1426,3 +1426,116 @@ I, [2015-03-31T11:35:25.894931 #18812]  INFO -- default-centos65: Finished in 0.
 I, [2015-03-31T11:35:25.894952 #18812]  INFO -- default-centos65: [32m2 examples, 0 failures[0m
 I, [2015-03-31T11:35:25.894965 #18812]  INFO -- default-centos65: 
 I, [2015-03-31T11:35:25.931587 #18812]  INFO -- default-centos65: Finished verifying <default-centos65> (0m1.82s).
+I, [2015-03-31T11:36:20.712517 #19096]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:36:20.925287 #19096]  INFO -- default-centos65: Removing /tmp/busser/suites/serverspec
+I, [2015-03-31T11:36:21.102807 #19096]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/bears_spec.rb (mode=0644)
+I, [2015-03-31T11:36:21.600877 #19096]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:36:22.109920 #19096]  INFO -- default-centos65: -----> Running serverspec test suite
+I, [2015-03-31T11:36:22.171323 #19096]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T11:36:22.466513 #19096]  INFO -- default-centos65: 
+I, [2015-03-31T11:36:22.466567 #19096]  INFO -- default-centos65: bears site
+I, [2015-03-31T11:36:22.494194 #19096]  INFO -- default-centos65: [32m  responds on port 81[0m
+I, [2015-03-31T11:36:22.494247 #19096]  INFO -- default-centos65: 
+I, [2015-03-31T11:36:22.494262 #19096]  INFO -- default-centos65: clowns site
+I, [2015-03-31T11:36:22.505284 #19096]  INFO -- default-centos65: [32m  responds on port 80[0m
+I, [2015-03-31T11:36:22.505343 #19096]  INFO -- default-centos65: 
+I, [2015-03-31T11:36:22.505365 #19096]  INFO -- default-centos65: Finished in 0.04231 seconds (files took 0.25752 seconds to load)
+I, [2015-03-31T11:36:22.505385 #19096]  INFO -- default-centos65: [32m2 examples, 0 failures[0m
+I, [2015-03-31T11:36:22.505402 #19096]  INFO -- default-centos65: 
+I, [2015-03-31T11:36:22.541321 #19096]  INFO -- default-centos65: Finished verifying <default-centos65> (0m1.83s).
+I, [2015-03-31T11:40:40.724381 #19155]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:40:40.931203 #19155]  INFO -- default-centos65: Removing /tmp/busser/suites/serverspec
+I, [2015-03-31T11:40:41.119845 #19155]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/bears_spec.rb (mode=0644)
+I, [2015-03-31T11:40:41.620778 #19155]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:40:42.117624 #19155]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)
+I, [2015-03-31T11:40:42.622041 #19155]  INFO -- default-centos65: -----> Running serverspec test suite
+I, [2015-03-31T11:40:42.679829 #19155]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T11:40:42.796378 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796429 #19155]  INFO -- default-centos65: bears site
+I, [2015-03-31T11:40:42.796447 #19155]  INFO -- default-centos65: [31m  responds on port 81 (FAILED - 1)[0m
+I, [2015-03-31T11:40:42.796460 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796513 #19155]  INFO -- default-centos65: clowns site
+I, [2015-03-31T11:40:42.796526 #19155]  INFO -- default-centos65: [31m  responds on port 80 (FAILED - 2)[0m
+I, [2015-03-31T11:40:42.796554 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796568 #19155]  INFO -- default-centos65: Failures:
+I, [2015-03-31T11:40:42.796579 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796590 #19155]  INFO -- default-centos65:   1) bears site responds on port 81
+I, [2015-03-31T11:40:42.796601 #19155]  INFO -- default-centos65:      [31mFailure/Error: expect(port 81).to be_listening 'tcp'[0m
+I, [2015-03-31T11:40:42.796613 #19155]  INFO -- default-centos65:      [31mNoMethodError:[0m
+I, [2015-03-31T11:40:42.796624 #19155]  INFO -- default-centos65:      [31m  undefined method `port' for #<RSpec::ExampleGroups::BearsSite:0x00000001488fe0>[0m
+I, [2015-03-31T11:40:42.796635 #19155]  INFO -- default-centos65:      [36m# /tmp/busser/suites/serverspec/localhost/bears_spec.rb:4:in `block (2 levels) in <top (required)>'[0m
+I, [2015-03-31T11:40:42.796650 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796661 #19155]  INFO -- default-centos65:   2) clowns site responds on port 80
+I, [2015-03-31T11:40:42.796672 #19155]  INFO -- default-centos65:      [31mFailure/Error: expect(port 80).to be_listening 'tcp'[0m
+I, [2015-03-31T11:40:42.796683 #19155]  INFO -- default-centos65:      [31mNoMethodError:[0m
+I, [2015-03-31T11:40:42.796693 #19155]  INFO -- default-centos65:      [31m  undefined method `port' for #<RSpec::ExampleGroups::ClownsSite:0x00000001486d80>[0m
+I, [2015-03-31T11:40:42.796704 #19155]  INFO -- default-centos65:      [36m# /tmp/busser/suites/serverspec/localhost/clowns_spec.rb:4:in `block (2 levels) in <top (required)>'[0m
+I, [2015-03-31T11:40:42.796714 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796756 #19155]  INFO -- default-centos65: Finished in 0.00058 seconds (files took 0.08416 seconds to load)
+I, [2015-03-31T11:40:42.796770 #19155]  INFO -- default-centos65: [31m2 examples, 2 failures[0m
+I, [2015-03-31T11:40:42.796781 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796791 #19155]  INFO -- default-centos65: Failed examples:
+I, [2015-03-31T11:40:42.796801 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.796812 #19155]  INFO -- default-centos65: [31mrspec /tmp/busser/suites/serverspec/localhost/bears_spec.rb:3[0m [36m# bears site responds on port 81[0m
+I, [2015-03-31T11:40:42.796822 #19155]  INFO -- default-centos65: [31mrspec /tmp/busser/suites/serverspec/localhost/clowns_spec.rb:3[0m [36m# clowns site responds on port 80[0m
+I, [2015-03-31T11:40:42.796833 #19155]  INFO -- default-centos65: 
+I, [2015-03-31T11:40:42.804639 #19155]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec failed
+I, [2015-03-31T11:40:42.809426 #19155]  INFO -- default-centos65: !!!!!! Ruby Script [/tmp/busser/gems/gems/busser-serverspec-0.5.4/lib/busser/runner_plugin/../serverspec/runner.rb /tmp/busser/suites/serverspec] exit code was 1
+E, [2015-03-31T11:40:42.919757 #19155] ERROR -- default-centos65: Verify failed on instance <default-centos65>.
+E, [2015-03-31T11:40:42.919886 #19155] ERROR -- default-centos65: ------Exception-------
+E, [2015-03-31T11:40:42.919906 #19155] ERROR -- default-centos65: Class: Kitchen::ActionFailed
+E, [2015-03-31T11:40:42.919951 #19155] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-03-31T11:40:42.919966 #19155] ERROR -- default-centos65: ---Nested Exception---
+E, [2015-03-31T11:40:42.919976 #19155] ERROR -- default-centos65: Class: Kitchen::SSHFailed
+E, [2015-03-31T11:40:42.919986 #19155] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser test
+']
+E, [2015-03-31T11:40:42.920016 #19155] ERROR -- default-centos65: ------Backtrace-------
+E, [2015-03-31T11:40:42.920029 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-03-31T11:40:42.920040 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-03-31T11:40:42.920050 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:67:in `block in verify'
+E, [2015-03-31T11:40:42.920060 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-03-31T11:40:42.920070 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `new'
+E, [2015-03-31T11:40:42.920080 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `verify'
+E, [2015-03-31T11:40:42.920090 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-31T11:40:42.920099 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-31T11:40:42.920109 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-03-31T11:40:42.920119 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-03-31T11:40:42.920162 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-31T11:40:42.920174 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-03-31T11:40:42.920184 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-31T11:40:42.920194 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-31T11:40:42.920208 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:330:in `verify_action'
+E, [2015-03-31T11:40:42.920218 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-31T11:40:42.920228 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-31T11:40:42.920238 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-31T11:40:42.920248 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-03-31T11:40:42.920258 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-31T11:40:42.920268 #19155] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-31T11:40:42.920278 #19155] ERROR -- default-centos65: ----------------------
+I, [2015-03-31T11:41:32.974027 #19207]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:41:33.184527 #19207]  INFO -- default-centos65: Removing /tmp/busser/suites/serverspec
+I, [2015-03-31T11:41:33.368891 #19207]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/bears_spec.rb (mode=0644)
+I, [2015-03-31T11:41:33.860439 #19207]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:41:34.358764 #19207]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)
+I, [2015-03-31T11:41:34.848018 #19207]  INFO -- default-centos65: -----> Running serverspec test suite
+I, [2015-03-31T11:41:34.912011 #19207]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T11:41:35.196032 #19207]  INFO -- default-centos65: 
+I, [2015-03-31T11:41:35.196086 #19207]  INFO -- default-centos65: bears site
+I, [2015-03-31T11:41:35.228071 #19207]  INFO -- default-centos65: [32m  responds on port 81[0m
+I, [2015-03-31T11:41:35.228127 #19207]  INFO -- default-centos65: 
+I, [2015-03-31T11:41:35.228147 #19207]  INFO -- default-centos65: clowns site
+I, [2015-03-31T11:41:35.235313 #19207]  INFO -- default-centos65: [32m  responds on port 80[0m
+I, [2015-03-31T11:41:35.236257 #19207]  INFO -- default-centos65: 
+I, [2015-03-31T11:41:35.236292 #19207]  INFO -- default-centos65: Finished in 0.0402 seconds (files took 0.25243 seconds to load)
+I, [2015-03-31T11:41:35.236311 #19207]  INFO -- default-centos65: [32m2 examples, 0 failures[0m
+I, [2015-03-31T11:41:35.236356 #19207]  INFO -- default-centos65: 
+I, [2015-03-31T11:41:35.273010 #19207]  INFO -- default-centos65: Finished verifying <default-centos65> (0m2.30s).
