@@ -1,3 +1,9 @@
 I, [2015-03-31T09:50:38.034492 #13442]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-03-31T09:50:38.265127 #13442]  INFO -- Kitchen: -----> Creating <default-centos65>...
 I, [2015-03-31T09:51:05.415939 #13442]  INFO -- Kitchen: -----> Kitchen is finished. (0m27.38s)
+I, [2015-03-31T09:53:48.570754 #13991]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-31T09:53:48.803211 #13991]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-31T09:53:51.646817 #13991]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.08s)
+I, [2015-03-31T09:55:37.150159 #14081]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-31T09:55:37.381967 #14081]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-31T09:55:40.220132 #14081]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.07s)

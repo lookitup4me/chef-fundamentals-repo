@@ -32,3 +32,13 @@ I, [2015-03-31T09:50:59.579128 #13442]  INFO -- default-centos65: ==> default: S
 I, [2015-03-31T09:51:04.063638 #13442]  INFO -- default-centos65: ==> default: Machine not provisioning because `--no-provision` is specified.
 I, [2015-03-31T09:51:05.409348 #13442]  INFO -- default-centos65: Vagrant instance <default-centos65> created.
 I, [2015-03-31T09:51:05.415696 #13442]  INFO -- default-centos65: Finished creating <default-centos65> (0m27.14s).
+I, [2015-03-31T09:53:48.803272 #13991]  INFO -- default-centos65: -----> Creating <default-centos65>...
+I, [2015-03-31T09:53:49.859120 #13991]  INFO -- default-centos65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-31T09:53:50.328653 #13991]  INFO -- default-centos65: ==> default: VirtualBox VM is already running.
+I, [2015-03-31T09:53:51.644765 #13991]  INFO -- default-centos65: Vagrant instance <default-centos65> created.
+I, [2015-03-31T09:53:51.646640 #13991]  INFO -- default-centos65: Finished creating <default-centos65> (0m2.84s).
+I, [2015-03-31T09:55:37.382020 #14081]  INFO -- default-centos65: -----> Creating <default-centos65>...
+I, [2015-03-31T09:55:38.432552 #14081]  INFO -- default-centos65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-31T09:55:38.895995 #14081]  INFO -- default-centos65: ==> default: VirtualBox VM is already running.
+I, [2015-03-31T09:55:40.217791 #14081]  INFO -- default-centos65: Vagrant instance <default-centos65> created.
+I, [2015-03-31T09:55:40.219941 #14081]  INFO -- default-centos65: Finished creating <default-centos65> (0m2.84s).
