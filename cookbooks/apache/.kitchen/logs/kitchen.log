@@ -75,3 +75,9 @@ I, [2015-03-31T11:28:45.573480 #18211]  INFO -- Kitchen: -----> Kitchen is finis
 I, [2015-03-31T11:29:26.940182 #18343]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-03-31T11:29:27.169105 #18343]  INFO -- Kitchen: -----> Verifying <default-centos65>...
 I, [2015-03-31T11:29:28.482582 #18343]  INFO -- Kitchen: -----> Kitchen is finished. (0m1.54s)
+I, [2015-03-31T11:30:21.344996 #18472]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-31T11:30:21.573348 #18472]  INFO -- Kitchen: -----> Verifying <default-centos65>...
+E, [2015-03-31T11:30:22.977418 #18472] ERROR -- Kitchen: Verify failed on instance <default-centos65>.
+I, [2015-03-31T11:34:11.872829 #18670]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-31T11:34:12.098723 #18670]  INFO -- Kitchen: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:34:13.420816 #18670]  INFO -- Kitchen: -----> Kitchen is finished. (0m1.55s)
