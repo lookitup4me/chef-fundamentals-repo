@@ -1221,3 +1221,5 @@ I, [2015-03-31T10:55:42.706255 #17171]  INFO -- default-centos65: Running handle
 I, [2015-03-31T10:55:42.706273 #17171]  INFO -- default-centos65: Running handlers complete
 I, [2015-03-31T10:55:42.706291 #17171]  INFO -- default-centos65: Chef Client finished, 11/11 resources updated in 91.759258152 seconds
 I, [2015-03-31T10:55:42.857907 #17171]  INFO -- default-centos65: Finished converging <default-centos65> (2m16.63s).
+I, [2015-03-31T11:17:27.975179 #17694]  INFO -- default-centos65: -----> Setting up <default-centos65>...
+I, [2015-03-31T11:17:27.976765 #17694]  INFO -- default-centos65: Finished setting up <default-centos65> (0m0.00s).
