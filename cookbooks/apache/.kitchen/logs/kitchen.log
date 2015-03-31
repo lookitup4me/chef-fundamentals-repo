@@ -93,3 +93,6 @@ E, [2015-03-31T11:40:42.921564 #19155] ERROR -- Kitchen: Verify failed on instan
 I, [2015-03-31T11:41:32.750551 #19207]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-03-31T11:41:32.973971 #19207]  INFO -- Kitchen: -----> Verifying <default-centos65>...
 I, [2015-03-31T11:41:35.273178 #19207]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.52s)
+I, [2015-03-31T11:46:11.771360 #19461]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-31T11:46:11.996403 #19461]  INFO -- Kitchen: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:46:14.797088 #19461]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.03s)

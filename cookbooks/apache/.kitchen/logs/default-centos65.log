@@ -1539,3 +1539,25 @@ I, [2015-03-31T11:41:35.236292 #19207]  INFO -- default-centos65: Finished in 0.
 I, [2015-03-31T11:41:35.236311 #19207]  INFO -- default-centos65: [32m2 examples, 0 failures[0m
 I, [2015-03-31T11:41:35.236356 #19207]  INFO -- default-centos65: 
 I, [2015-03-31T11:41:35.273010 #19207]  INFO -- default-centos65: Finished verifying <default-centos65> (0m2.30s).
+I, [2015-03-31T11:46:11.996456 #19461]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:46:12.206952 #19461]  INFO -- default-centos65: Removing /tmp/busser/suites/serverspec
+I, [2015-03-31T11:46:12.386314 #19461]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/bears_spec.rb (mode=0644)
+I, [2015-03-31T11:46:12.869762 #19461]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:46:13.359741 #19461]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/server_spec.rb (mode=0644)
+I, [2015-03-31T11:46:13.859011 #19461]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/spec_helper.rb (mode=0644)
+I, [2015-03-31T11:46:14.360720 #19461]  INFO -- default-centos65: -----> Running serverspec test suite
+I, [2015-03-31T11:46:14.425838 #19461]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T11:46:14.704740 #19461]  INFO -- default-centos65: 
+I, [2015-03-31T11:46:14.704817 #19461]  INFO -- default-centos65: bears site
+I, [2015-03-31T11:46:14.735202 #19461]  INFO -- default-centos65: [32m  responds on port 81[0m
+I, [2015-03-31T11:46:14.735254 #19461]  INFO -- default-centos65: 
+I, [2015-03-31T11:46:14.735269 #19461]  INFO -- default-centos65: clowns site
+I, [2015-03-31T11:46:14.743229 #19461]  INFO -- default-centos65: [32m  responds on port 80[0m
+I, [2015-03-31T11:46:14.743279 #19461]  INFO -- default-centos65: 
+I, [2015-03-31T11:46:14.743298 #19461]  INFO -- default-centos65: server
+I, [2015-03-31T11:46:14.760153 #19461]  INFO -- default-centos65: [32m  has apache installed[0m
+I, [2015-03-31T11:46:14.760210 #19461]  INFO -- default-centos65: 
+I, [2015-03-31T11:46:14.760228 #19461]  INFO -- default-centos65: Finished in 0.05756 seconds (files took 0.25081 seconds to load)
+I, [2015-03-31T11:46:14.760243 #19461]  INFO -- default-centos65: [32m3 examples, 0 failures[0m
+I, [2015-03-31T11:46:14.760275 #19461]  INFO -- default-centos65: 
+I, [2015-03-31T11:46:14.796897 #19461]  INFO -- default-centos65: Finished verifying <default-centos65> (0m2.80s).
