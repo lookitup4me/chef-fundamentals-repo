@@ -1223,3 +1223,109 @@ I, [2015-03-31T10:55:42.706291 #17171]  INFO -- default-centos65: Chef Client fi
 I, [2015-03-31T10:55:42.857907 #17171]  INFO -- default-centos65: Finished converging <default-centos65> (2m16.63s).
 I, [2015-03-31T11:17:27.975179 #17694]  INFO -- default-centos65: -----> Setting up <default-centos65>...
 I, [2015-03-31T11:17:27.976765 #17694]  INFO -- default-centos65: Finished setting up <default-centos65> (0m0.00s).
+I, [2015-03-31T11:21:45.657562 #18110]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:21:45.732852 #18110]  INFO -- default-centos65: sudo: /tmp/busser/bin/busser: command not found
+I, [2015-03-31T11:21:45.735538 #18110]  INFO -- default-centos65: sudo: /tmp/busser/bin/busser: command not found
+I, [2015-03-31T11:21:45.735590 #18110]  INFO -- default-centos65: Uploading /serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:21:45.741697 #18110]  INFO -- default-centos65: sudo: /tmp/busser/bin/busser: command not found
+I, [2015-03-31T11:21:45.742229 #18110]  INFO -- default-centos65: sudo: /tmp/busser/bin/busser: command not found
+E, [2015-03-31T11:21:45.742594 #18110] ERROR -- default-centos65: Verify failed on instance <default-centos65>.
+E, [2015-03-31T11:21:45.742745 #18110] ERROR -- default-centos65: ------Exception-------
+E, [2015-03-31T11:21:45.742762 #18110] ERROR -- default-centos65: Class: Kitchen::ActionFailed
+E, [2015-03-31T11:21:45.742774 #18110] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser suite cleanup
+
+echo "Uploading `sudo -E /tmp/busser/bin/busser suite path`/serverspec/localhost/clowns_spec.rb (mode=0644)"
+echo "cmVxdWlyZSAgJ3NlcnZlcnNwZWMnCnNldCA6YmFja2VuZCwgOmV4ZWMKZGVzY3JpYmUgJ2Nsb3ducyBzaXRlJyBkbwogIGl0ICdyZXNwb25kcyBvbiBwb3J0IDgwJyBkbwogICAgZXhwZWN0KHBvcnQgODApLnRvIGJlX2xpc3RlbmluZyAndGNwJwogIGVuZAplbmQ=" | sudo -E /tmp/busser/bin/busser deserialize --destination=`sudo -E /tmp/busser/bin/busser suite path`/serverspec/localhost/clowns_spec.rb --md5sum=4b35077f330e0c52cd23355f1287dec5 --perms=0644
+
+']
+E, [2015-03-31T11:21:45.742789 #18110] ERROR -- default-centos65: ---Nested Exception---
+E, [2015-03-31T11:21:45.742799 #18110] ERROR -- default-centos65: Class: Kitchen::SSHFailed
+E, [2015-03-31T11:21:45.742809 #18110] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+BUSSER_ROOT="/tmp/busser" GEM_HOME="/tmp/busser/gems" GEM_PATH="/tmp/busser/gems" GEM_CACHE="/tmp/busser/gems/cache" 
+export BUSSER_ROOT GEM_HOME GEM_PATH GEM_CACHE
+
+sudo -E /tmp/busser/bin/busser suite cleanup
+
+echo "Uploading `sudo -E /tmp/busser/bin/busser suite path`/serverspec/localhost/clowns_spec.rb (mode=0644)"
+echo "cmVxdWlyZSAgJ3NlcnZlcnNwZWMnCnNldCA6YmFja2VuZCwgOmV4ZWMKZGVzY3JpYmUgJ2Nsb3ducyBzaXRlJyBkbwogIGl0ICdyZXNwb25kcyBvbiBwb3J0IDgwJyBkbwogICAgZXhwZWN0KHBvcnQgODApLnRvIGJlX2xpc3RlbmluZyAndGNwJwogIGVuZAplbmQ=" | sudo -E /tmp/busser/bin/busser deserialize --destination=`sudo -E /tmp/busser/bin/busser suite path`/serverspec/localhost/clowns_spec.rb --md5sum=4b35077f330e0c52cd23355f1287dec5 --perms=0644
+
+']
+E, [2015-03-31T11:21:45.742819 #18110] ERROR -- default-centos65: ------Backtrace-------
+E, [2015-03-31T11:21:45.742829 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-03-31T11:21:45.742838 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-03-31T11:21:45.742848 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:66:in `block in verify'
+E, [2015-03-31T11:21:45.742858 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-03-31T11:21:45.742867 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `new'
+E, [2015-03-31T11:21:45.742877 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:65:in `verify'
+E, [2015-03-31T11:21:45.742886 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-31T11:21:45.742911 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-31T11:21:45.742923 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-03-31T11:21:45.742933 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-03-31T11:21:45.742949 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-31T11:21:45.742964 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-03-31T11:21:45.742973 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-31T11:21:45.743009 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-31T11:21:45.743019 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:330:in `verify_action'
+E, [2015-03-31T11:21:45.743029 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-31T11:21:45.743038 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-31T11:21:45.743048 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-31T11:21:45.743057 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:152:in `verify'
+E, [2015-03-31T11:21:45.743076 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-31T11:21:45.743086 #18110] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-31T11:21:45.743095 #18110] ERROR -- default-centos65: ----------------------
+I, [2015-03-31T11:21:58.142040 #18159]  INFO -- default-centos65: -----> Setting up <default-centos65>...
+I, [2015-03-31T11:22:31.847075 #18159]  INFO -- default-centos65: Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 36%)Fetching: thor-0.19.0.gem ( 54%)Fetching: thor-0.19.0.gem ( 72%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+I, [2015-03-31T11:22:31.876801 #18159]  INFO -- default-centos65: Successfully installed thor-0.19.0
+I, [2015-03-31T11:22:42.604406 #18159]  INFO -- default-centos65: Fetching: busser-0.7.0.gemFetching: busser-0.7.0.gem ( 31%)Fetching: busser-0.7.0.gem ( 35%)Fetching: busser-0.7.0.gem ( 64%)Fetching: busser-0.7.0.gem ( 69%)Fetching: busser-0.7.0.gem ( 97%)Fetching: busser-0.7.0.gem (100%)Fetching: busser-0.7.0.gem (100%)
+I, [2015-03-31T11:22:42.623632 #18159]  INFO -- default-centos65: Successfully installed busser-0.7.0
+I, [2015-03-31T11:22:42.623682 #18159]  INFO -- default-centos65: 2 gems installed
+I, [2015-03-31T11:22:42.808194 #18159]  INFO -- default-centos65: -----> Setting up Busser
+I, [2015-03-31T11:22:42.808336 #18159]  INFO -- default-centos65: Creating BUSSER_ROOT in /tmp/busser
+I, [2015-03-31T11:22:42.808366 #18159]  INFO -- default-centos65: Creating busser binstub
+I, [2015-03-31T11:23:17.150813 #18159]  INFO -- default-centos65: Plugin serverspec installed (version 0.5.4)
+I, [2015-03-31T11:23:17.154261 #18159]  INFO -- default-centos65: -----> Running postinstall for serverspec plugin
+I, [2015-03-31T11:23:39.723461 #18159]  INFO -- default-centos65: Finished setting up <default-centos65> (1m41.58s).
+I, [2015-03-31T11:24:21.399828 #18211]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:24:21.610223 #18211]  INFO -- default-centos65: Suite path directory /tmp/busser/suites does not exist, skipping.
+I, [2015-03-31T11:24:21.799976 #18211]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:24:22.300813 #18211]  INFO -- default-centos65: -----> Running serverspec test suite
+I, [2015-03-31T11:24:22.310788 #18211]  INFO -- default-centos65: -----> Installing Serverspec..
+I, [2015-03-31T11:24:55.883629 #18211]  INFO -- default-centos65: Fetching: net-ssh-2.9.2.gemFetching: net-ssh-2.9.2.gem (  5%)Fetching: net-ssh-2.9.2.gem (  9%)Fetching: net-ssh-2.9.2.gem ( 10%)Fetching: net-ssh-2.9.2.gem ( 14%)Fetching: net-ssh-2.9.2.gem ( 18%)Fetching: net-ssh-2.9.2.gem ( 19%)Fetching: net-ssh-2.9.2.gem ( 23%)Fetching: net-ssh-2.9.2.gem ( 24%)Fetching: net-ssh-2.9.2.gem ( 27%)Fetching: net-ssh-2.9.2.gem ( 28%)Fetching: net-ssh-2.9.2.gem ( 32%)Fetching: net-ssh-2.9.2.gem ( 33%)Fetching: net-ssh-2.9.2.gem ( 36%)Fetching: net-ssh-2.9.2.gem ( 37%)Fetching: net-ssh-2.9.2.gem ( 41%)Fetching: net-ssh-2.9.2.gem ( 42%)Fetching: net-ssh-2.9.2.gem ( 45%)Fetching: net-ssh-2.9.2.gem ( 47%)Fetching: net-ssh-2.9.2.gem ( 50%)Fetching: net-ssh-2.9.2.gem ( 51%)Fetching: net-ssh-2.9.2.gem ( 54%)Fetching: net-ssh-2.9.2.gem ( 56%)Fetching: net-ssh-2.9.2.gem ( 59%)Fetching: net-ssh-2.9.2.gem ( 60%)Fetching: net-ssh-2.9.2.gem ( 63%)Fetching: net-ssh-2.9.2.gem ( 65%)Fetching: net-ssh-2.9.2.gem ( 68%)Fetching: net-ssh-2.9.2.gem ( 70%)Fetching: net-ssh-2.9.2.gem ( 72%)Fetching: net-ssh-2.9.2.gem ( 74%)Fetching: net-ssh-2.9.2.gem ( 77%)Fetching: net-ssh-2.9.2.gem ( 79%)Fetching: net-ssh-2.9.2.gem ( 81%)Fetching: net-ssh-2.9.2.gem ( 83%)Fetching: net-ssh-2.9.2.gem ( 86%)Fetching: net-ssh-2.9.2.gem ( 88%)Fetching: net-ssh-2.9.2.gem ( 90%)Fetching: net-ssh-2.9.2.gem ( 93%)Fetching: net-ssh-2.9.2.gem ( 95%)Fetching: net-ssh-2.9.2.gem ( 97%)Fetching: net-ssh-2.9.2.gem ( 99%)Fetching: net-ssh-2.9.2.gem (100%)Fetching: net-ssh-2.9.2.gem (100%)
+I, [2015-03-31T11:25:17.802307 #18211]  INFO -- default-centos65: Fetching: net-scp-1.2.1.gemFetching: net-scp-1.2.1.gem ( 23%)Fetching: net-scp-1.2.1.gem ( 25%)Fetching: net-scp-1.2.1.gem ( 47%)Fetching: net-scp-1.2.1.gem ( 50%)Fetching: net-scp-1.2.1.gem ( 72%)Fetching: net-scp-1.2.1.gem ( 75%)Fetching: net-scp-1.2.1.gem ( 96%)Fetching: net-scp-1.2.1.gem (100%)Fetching: net-scp-1.2.1.gem (100%)
+I, [2015-03-31T11:25:39.289859 #18211]  INFO -- default-centos65: Fetching: specinfra-2.27.0.gemFetching: specinfra-2.27.0.gem ( 15%)Fetching: specinfra-2.27.0.gem ( 16%)Fetching: specinfra-2.27.0.gem ( 30%)Fetching: specinfra-2.27.0.gem ( 32%)Fetching: specinfra-2.27.0.gem ( 46%)Fetching: specinfra-2.27.0.gem ( 48%)Fetching: specinfra-2.27.0.gem ( 62%)Fetching: specinfra-2.27.0.gem ( 64%)Fetching: specinfra-2.27.0.gem ( 77%)Fetching: specinfra-2.27.0.gem ( 80%)Fetching: specinfra-2.27.0.gem ( 93%)Fetching: specinfra-2.27.0.gem ( 96%)Fetching: specinfra-2.27.0.gem (100%)Fetching: specinfra-2.27.0.gem (100%)
+I, [2015-03-31T11:26:00.855932 #18211]  INFO -- default-centos65: Fetching: multi_json-1.11.0.gemFetching: multi_json-1.11.0.gem ( 30%)Fetching: multi_json-1.11.0.gem ( 34%)Fetching: multi_json-1.11.0.gem ( 63%)Fetching: multi_json-1.11.0.gem ( 67%)Fetching: multi_json-1.11.0.gem ( 95%)Fetching: multi_json-1.11.0.gem (100%)Fetching: multi_json-1.11.0.gem (100%)
+I, [2015-03-31T11:26:22.400176 #18211]  INFO -- default-centos65: Fetching: diff-lcs-1.2.5.gemFetching: diff-lcs-1.2.5.gem ( 15%)Fetching: diff-lcs-1.2.5.gem ( 17%)Fetching: diff-lcs-1.2.5.gem ( 32%)Fetching: diff-lcs-1.2.5.gem ( 34%)Fetching: diff-lcs-1.2.5.gem ( 48%)Fetching: diff-lcs-1.2.5.gem ( 50%)Fetching: diff-lcs-1.2.5.gem ( 64%)Fetching: diff-lcs-1.2.5.gem ( 67%)Fetching: diff-lcs-1.2.5.gem ( 80%)Fetching: diff-lcs-1.2.5.gem ( 84%)Fetching: diff-lcs-1.2.5.gem ( 97%)Fetching: diff-lcs-1.2.5.gem (100%)Fetching: diff-lcs-1.2.5.gem (100%)
+I, [2015-03-31T11:26:44.289679 #18211]  INFO -- default-centos65: Fetching: rspec-support-3.2.2.gemFetching: rspec-support-3.2.2.gem ( 29%)Fetching: rspec-support-3.2.2.gem ( 32%)Fetching: rspec-support-3.2.2.gem ( 60%)Fetching: rspec-support-3.2.2.gem ( 64%)Fetching: rspec-support-3.2.2.gem ( 91%)Fetching: rspec-support-3.2.2.gem ( 96%)Fetching: rspec-support-3.2.2.gem (100%)Fetching: rspec-support-3.2.2.gem (100%)
+I, [2015-03-31T11:27:06.252019 #18211]  INFO -- default-centos65: Fetching: rspec-expectations-3.2.0.gemFetching: rspec-expectations-3.2.0.gem ( 24%)Fetching: rspec-expectations-3.2.0.gem ( 48%)Fetching: rspec-expectations-3.2.0.gem ( 73%)Fetching: rspec-expectations-3.2.0.gem ( 97%)Fetching: rspec-expectations-3.2.0.gem (100%)Fetching: rspec-expectations-3.2.0.gem (100%)
+I, [2015-03-31T11:27:28.191953 #18211]  INFO -- default-centos65: Fetching: rspec-core-3.2.2.gemFetching: rspec-core-3.2.2.gem ( 14%)Fetching: rspec-core-3.2.2.gem ( 27%)Fetching: rspec-core-3.2.2.gem ( 40%)Fetching: rspec-core-3.2.2.gem ( 54%)Fetching: rspec-core-3.2.2.gem ( 67%)Fetching: rspec-core-3.2.2.gem ( 81%)Fetching: rspec-core-3.2.2.gem ( 94%)Fetching: rspec-core-3.2.2.gem (100%)Fetching: rspec-core-3.2.2.gem (100%)
+I, [2015-03-31T11:27:49.425089 #18211]  INFO -- default-centos65: Fetching: rspec-its-1.2.0.gemFetching: rspec-its-1.2.0.gem ( 57%)Fetching: rspec-its-1.2.0.gem ( 64%)Fetching: rspec-its-1.2.0.gem (100%)Fetching: rspec-its-1.2.0.gem (100%)
+I, [2015-03-31T11:28:11.163902 #18211]  INFO -- default-centos65: Fetching: rspec-mocks-3.2.1.gemFetching: rspec-mocks-3.2.1.gem ( 11%)Fetching: rspec-mocks-3.2.1.gem ( 12%)Fetching: rspec-mocks-3.2.1.gem ( 22%)Fetching: rspec-mocks-3.2.1.gem ( 24%)Fetching: rspec-mocks-3.2.1.gem ( 33%)Fetching: rspec-mocks-3.2.1.gem ( 35%)Fetching: rspec-mocks-3.2.1.gem ( 44%)Fetching: rspec-mocks-3.2.1.gem ( 47%)Fetching: rspec-mocks-3.2.1.gem ( 56%)Fetching: rspec-mocks-3.2.1.gem ( 58%)Fetching: rspec-mocks-3.2.1.gem ( 67%)Fetching: rspec-mocks-3.2.1.gem ( 70%)Fetching: rspec-mocks-3.2.1.gem ( 78%)Fetching: rspec-mocks-3.2.1.gem ( 81%)Fetching: rspec-mocks-3.2.1.gem ( 89%)Fetching: rspec-mocks-3.2.1.gem ( 93%)Fetching: rspec-mocks-3.2.1.gem (100%)Fetching: rspec-mocks-3.2.1.gem (100%)
+I, [2015-03-31T11:28:34.493000 #18211]  INFO -- default-centos65: Fetching: rspec-3.2.0.gemFetching: rspec-3.2.0.gem (100%)Fetching: rspec-3.2.0.gem (100%)
+I, [2015-03-31T11:28:45.078041 #18211]  INFO -- default-centos65: Fetching: serverspec-2.14.0.gemFetching: serverspec-2.14.0.gem ( 22%)Fetching: serverspec-2.14.0.gem ( 25%)Fetching: serverspec-2.14.0.gem ( 46%)Fetching: serverspec-2.14.0.gem ( 50%)Fetching: serverspec-2.14.0.gem ( 70%)Fetching: serverspec-2.14.0.gem ( 74%)Fetching: serverspec-2.14.0.gem ( 95%)Fetching: serverspec-2.14.0.gem ( 99%)Fetching: serverspec-2.14.0.gem (100%)Fetching: serverspec-2.14.0.gem (100%)
+I, [2015-03-31T11:28:45.126550 #18211]  INFO -- default-centos65: -----> serverspec installed (version 2.14.0)
+I, [2015-03-31T11:28:45.194968 #18211]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T11:28:45.490598 #18211]  INFO -- default-centos65: 
+I, [2015-03-31T11:28:45.490659 #18211]  INFO -- default-centos65: clowns site
+I, [2015-03-31T11:28:45.535631 #18211]  INFO -- default-centos65: [32m  responds on port 80[0m
+I, [2015-03-31T11:28:45.535690 #18211]  INFO -- default-centos65: 
+I, [2015-03-31T11:28:45.535708 #18211]  INFO -- default-centos65: Finished in 0.04893 seconds (files took 0.25533 seconds to load)
+I, [2015-03-31T11:28:45.535757 #18211]  INFO -- default-centos65: [32m1 example, 0 failures[0m
+I, [2015-03-31T11:28:45.535772 #18211]  INFO -- default-centos65: 
+I, [2015-03-31T11:28:45.573302 #18211]  INFO -- default-centos65: Finished verifying <default-centos65> (4m24.17s).
+I, [2015-03-31T11:29:27.169164 #18343]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:29:27.376397 #18343]  INFO -- default-centos65: Removing /tmp/busser/suites/serverspec
+I, [2015-03-31T11:29:27.565374 #18343]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:29:28.064538 #18343]  INFO -- default-centos65: -----> Running serverspec test suite
+I, [2015-03-31T11:29:28.123599 #18343]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T11:29:28.413927 #18343]  INFO -- default-centos65: 
+I, [2015-03-31T11:29:28.413982 #18343]  INFO -- default-centos65: clowns site
+I, [2015-03-31T11:29:28.450663 #18343]  INFO -- default-centos65: [32m  responds on port 80[0m
+I, [2015-03-31T11:29:28.450713 #18343]  INFO -- default-centos65: 
+I, [2015-03-31T11:29:28.450729 #18343]  INFO -- default-centos65: Finished in 0.03134 seconds (files took 0.25956 seconds to load)
+I, [2015-03-31T11:29:28.450742 #18343]  INFO -- default-centos65: [32m1 example, 0 failures[0m
+I, [2015-03-31T11:29:28.450754 #18343]  INFO -- default-centos65: 
+I, [2015-03-31T11:29:28.482435 #18343]  INFO -- default-centos65: Finished verifying <default-centos65> (0m1.31s).
