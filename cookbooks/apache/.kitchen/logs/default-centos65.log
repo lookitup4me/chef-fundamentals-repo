@@ -1409,3 +1409,20 @@ I, [2015-03-31T11:34:13.385144 #18670]  INFO -- default-centos65: Finished in 0.
 I, [2015-03-31T11:34:13.385179 #18670]  INFO -- default-centos65: [32m1 example, 0 failures[0m
 I, [2015-03-31T11:34:13.385191 #18670]  INFO -- default-centos65: 
 I, [2015-03-31T11:34:13.420651 #18670]  INFO -- default-centos65: Finished verifying <default-centos65> (0m1.32s).
+I, [2015-03-31T11:35:24.110185 #18812]  INFO -- default-centos65: -----> Verifying <default-centos65>...
+I, [2015-03-31T11:35:24.321949 #18812]  INFO -- default-centos65: Removing /tmp/busser/suites/serverspec
+I, [2015-03-31T11:35:24.501768 #18812]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/bears_spec.rb (mode=0644)
+I, [2015-03-31T11:35:25.003248 #18812]  INFO -- default-centos65: Uploading /tmp/busser/suites/serverspec/localhost/clowns_spec.rb (mode=0644)
+I, [2015-03-31T11:35:25.506905 #18812]  INFO -- default-centos65: -----> Running serverspec test suite
+I, [2015-03-31T11:35:25.566053 #18812]  INFO -- default-centos65: /opt/chef/embedded/bin/ruby -I/tmp/busser/suites/serverspec -I/tmp/busser/gems/gems/rspec-support-3.2.2/lib:/tmp/busser/gems/gems/rspec-core-3.2.2/lib /opt/chef/embedded/bin/rspec --pattern /tmp/busser/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/busser/suites/serverspec
+I, [2015-03-31T11:35:25.848141 #18812]  INFO -- default-centos65: 
+I, [2015-03-31T11:35:25.848195 #18812]  INFO -- default-centos65: bears site
+I, [2015-03-31T11:35:25.886329 #18812]  INFO -- default-centos65: [32m  responds on port 81[0m
+I, [2015-03-31T11:35:25.886387 #18812]  INFO -- default-centos65: 
+I, [2015-03-31T11:35:25.886405 #18812]  INFO -- default-centos65: clowns site
+I, [2015-03-31T11:35:25.894855 #18812]  INFO -- default-centos65: [32m  responds on port 80[0m
+I, [2015-03-31T11:35:25.894914 #18812]  INFO -- default-centos65: 
+I, [2015-03-31T11:35:25.894931 #18812]  INFO -- default-centos65: Finished in 0.04746 seconds (files took 0.25207 seconds to load)
+I, [2015-03-31T11:35:25.894952 #18812]  INFO -- default-centos65: [32m2 examples, 0 failures[0m
+I, [2015-03-31T11:35:25.894965 #18812]  INFO -- default-centos65: 
+I, [2015-03-31T11:35:25.931587 #18812]  INFO -- default-centos65: Finished verifying <default-centos65> (0m1.82s).
