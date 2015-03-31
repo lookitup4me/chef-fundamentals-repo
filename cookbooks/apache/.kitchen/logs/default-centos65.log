@@ -553,3 +553,84 @@ E, [2015-03-31T10:12:45.938175 #15320] ERROR -- default-centos65: /opt/chefdk/em
 E, [2015-03-31T10:12:45.938185 #15320] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
 E, [2015-03-31T10:12:45.938220 #15320] ERROR -- default-centos65: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
 E, [2015-03-31T10:12:45.938230 #15320] ERROR -- default-centos65: ----------------------
+I, [2015-03-31T10:14:18.077057 #15568]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-03-31T10:14:18.077572 #15568]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-03-31T10:14:18.077631 #15568]  INFO -- default-centos65: Preparing dna.json
+I, [2015-03-31T10:14:18.078221 #15568]  INFO -- default-centos65: Preparing current project directory as a cookbook
+I, [2015-03-31T10:14:18.083796 #15568]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-03-31T10:14:18.085052 #15568]  INFO -- default-centos65: Preparing solo.rb
+I, [2015-03-31T10:14:18.117932 #15568]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-03-31T10:14:18.131211 #15568]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-03-31T10:14:18.786788 #15568]  INFO -- default-centos65: Starting Chef Client, version 12.2.1
+I, [2015-03-31T10:14:25.044378 #15568]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-03-31T10:14:25.044430 #15568]  INFO -- default-centos65: Converging 9 resources
+I, [2015-03-31T10:14:25.044445 #15568]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-03-31T10:14:26.702204 #15568]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T10:14:26.703206 #15568]  INFO -- default-centos65:   * execute[mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf.disabled] action run (skipped due to only_if)
+I, [2015-03-31T10:14:26.713143 #15568]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T10:14:26.713193 #15568]  INFO -- default-centos65:   * directory[/srv/apache/clowns] action create (up to date)
+I, [2015-03-31T10:14:26.713235 #15568]  INFO -- default-centos65:   * template[/srv/apache/clowns/index.html] action create
+I, [2015-03-31T10:14:26.713249 #15568]  INFO -- default-centos65:     - create new file /srv/apache/clowns/index.html
+I, [2015-03-31T10:14:26.713261 #15568]  INFO -- default-centos65:     - update content in file /srv/apache/clowns/index.html from none to 7cf186
+I, [2015-03-31T10:14:26.713274 #15568]  INFO -- default-centos65:     --- /srv/apache/clowns/index.html	2015-03-31 17:14:26.361662189 +0000
+I, [2015-03-31T10:14:26.713285 #15568]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150331-3087-7qhh9g	2015-03-31 17:14:26.361662189 +0000
+I, [2015-03-31T10:14:26.713297 #15568]  INFO -- default-centos65:     @@ -1 +1,8 @@
+I, [2015-03-31T10:14:26.713308 #15568]  INFO -- default-centos65:     +<html>
+I, [2015-03-31T10:14:26.713319 #15568]  INFO -- default-centos65:     +  <body>
+I, [2015-03-31T10:14:26.713330 #15568]  INFO -- default-centos65:     +    <h1>Welcome to Chef</h1>
+I, [2015-03-31T10:14:26.713340 #15568]  INFO -- default-centos65:     +    <h2>We love clowns</h2>
+I, [2015-03-31T10:14:26.713365 #15568]  INFO -- default-centos65:     +    10.0.2.15:80
+I, [2015-03-31T10:14:26.713376 #15568]  INFO -- default-centos65:     +  </body>
+I, [2015-03-31T10:14:26.713386 #15568]  INFO -- default-centos65:     +</html>
+I, [2015-03-31T10:14:26.738168 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:26.742222 #15568]  INFO -- default-centos65:   * template[/etc/httpd/conf.d/bears.conf] action create
+I, [2015-03-31T10:14:26.744165 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:26.744214 #15568]  INFO -- default-centos65:     - update content in file /etc/httpd/conf.d/bears.conf from none to 67a4ee
+I, [2015-03-31T10:14:26.744251 #15568]  INFO -- default-centos65:     --- /etc/httpd/conf.d/bears.conf	2015-03-31 17:14:26.395679190 +0000
+I, [2015-03-31T10:14:26.744271 #15568]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150331-3087-smus7j	2015-03-31 17:14:26.395679190 +0000
+I, [2015-03-31T10:14:26.744287 #15568]  INFO -- default-centos65:     @@ -1 +1,18 @@
+I, [2015-03-31T10:14:26.744302 #15568]  INFO -- default-centos65:     +  Listen 81
+I, [2015-03-31T10:14:26.744316 #15568]  INFO -- default-centos65:     +
+I, [2015-03-31T10:14:26.744329 #15568]  INFO -- default-centos65:     +<VirtualHost *:81>
+I, [2015-03-31T10:14:26.744343 #15568]  INFO -- default-centos65:     +  ServerAdmin webmaster@localhost
+I, [2015-03-31T10:14:26.744366 #15568]  INFO -- default-centos65:     +
+I, [2015-03-31T10:14:26.744380 #15568]  INFO -- default-centos65:     +  DocumentRoot /srv/apache/bears
+I, [2015-03-31T10:14:26.744393 #15568]  INFO -- default-centos65:     +  <Directory />
+I, [2015-03-31T10:14:26.744427 #15568]  INFO -- default-centos65:     +    Options FollowSymLinks
+I, [2015-03-31T10:14:26.744441 #15568]  INFO -- default-centos65:     +    AllowOverride None
+I, [2015-03-31T10:14:26.744454 #15568]  INFO -- default-centos65:     +  </Directory>
+I, [2015-03-31T10:14:26.744468 #15568]  INFO -- default-centos65:     +  <Directory /srv/apache/bears>
+I, [2015-03-31T10:14:26.744481 #15568]  INFO -- default-centos65:     +    Options Indexes FollowSymLinks MultiViews
+I, [2015-03-31T10:14:26.744496 #15568]  INFO -- default-centos65:     +    AllowOverride None
+I, [2015-03-31T10:14:26.745106 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:26.745148 #15568]  INFO -- default-centos65:     +    allow from all
+I, [2015-03-31T10:14:26.745167 #15568]  INFO -- default-centos65:     +  </Directory>
+I, [2015-03-31T10:14:26.745182 #15568]  INFO -- default-centos65:     +</VirtualHost>
+I, [2015-03-31T10:14:26.847108 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:26.847268 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:26.847290 #15568]  INFO -- default-centos65:     - create new directory /srv/apache/bears
+I, [2015-03-31T10:14:26.847371 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:26.847522 #15568]  INFO -- default-centos65:   * template[/srv/apache/bears/index.html] action create
+I, [2015-03-31T10:14:26.847606 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:26.847626 #15568]  INFO -- default-centos65:     - update content in file /srv/apache/bears/index.html from none to 26dd06
+I, [2015-03-31T10:14:26.847641 #15568]  INFO -- default-centos65:     --- /srv/apache/bears/index.html	2015-03-31 17:14:26.403683190 +0000
+I, [2015-03-31T10:14:26.847653 #15568]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150331-3087-q79b5e	2015-03-31 17:14:26.403683190 +0000
+I, [2015-03-31T10:14:26.847664 #15568]  INFO -- default-centos65:     @@ -1 +1,8 @@
+I, [2015-03-31T10:14:26.847675 #15568]  INFO -- default-centos65:     +<html>
+I, [2015-03-31T10:14:26.847685 #15568]  INFO -- default-centos65:     +  <body>
+I, [2015-03-31T10:14:26.847765 #15568]  INFO -- default-centos65:     +    <h1>Welcome to Chef</h1>
+I, [2015-03-31T10:14:26.847777 #15568]  INFO -- default-centos65:     +    <h2>We love bears</h2>
+I, [2015-03-31T10:14:26.847788 #15568]  INFO -- default-centos65:     +    10.0.2.15:81
+I, [2015-03-31T10:14:26.847801 #15568]  INFO -- default-centos65:     +  </body>
+I, [2015-03-31T10:14:26.847811 #15568]  INFO -- default-centos65:     +</html>
+I, [2015-03-31T10:14:26.847822 #15568]  INFO -- default-centos65:     - change mode from '' to '0644'
+I, [2015-03-31T10:14:26.848054 #15568]  INFO -- default-centos65:   * service[httpd] action enable
+I, [2015-03-31T10:14:26.848076 #15568]  INFO -- default-centos65:     - enable service service[httpd]
+I, [2015-03-31T10:14:26.893744 #15568]  INFO -- default-centos65:  (up to date)
+I, [2015-03-31T10:14:28.131930 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:28.131997 #15568]  INFO -- default-centos65:     - restart service service[httpd]
+I, [2015-03-31T10:14:28.132018 #15568]  INFO -- default-centos65: 
+I, [2015-03-31T10:14:28.132036 #15568]  INFO -- default-centos65: Running handlers:
+I, [2015-03-31T10:14:28.132053 #15568]  INFO -- default-centos65: Running handlers complete
+I, [2015-03-31T10:14:28.132069 #15568]  INFO -- default-centos65: Chef Client finished, 6/10 resources updated in 9.357699738 seconds
+I, [2015-03-31T10:14:28.279851 #15568]  INFO -- default-centos65: Finished converging <default-centos65> (0m10.20s).

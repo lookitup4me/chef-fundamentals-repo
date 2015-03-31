@@ -31,3 +31,6 @@ E, [2015-03-31T10:09:50.978863 #15270] ERROR -- Kitchen: Converge failed on inst
 I, [2015-03-31T10:12:38.783304 #15320]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-03-31T10:12:39.007296 #15320]  INFO -- Kitchen: -----> Converging <default-centos65>...
 E, [2015-03-31T10:12:45.939534 #15320] ERROR -- Kitchen: Converge failed on instance <default-centos65>.
+I, [2015-03-31T10:14:17.849013 #15568]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-31T10:14:18.076994 #15568]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-31T10:14:28.280034 #15568]  INFO -- Kitchen: -----> Kitchen is finished. (0m10.43s)
